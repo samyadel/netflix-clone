@@ -1,0 +1,184 @@
+/***************GENERAL***************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 10px;
+  padding-left: 50px;
+  background: #141414;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/***************NAVIGATION BAR***************/
+
+.logo {
+  width: 100px;
+}
+
+/***************FEATURED FILM****************/
+
+.featured-film-trailer {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 110vw;
+}
+
+.featured-film-trailer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 1000px;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.featured {
+  height: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  margin-bottom: 150px;
+  flex-direction: column;
+}
+
+.featured img {
+  width: 550px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.featured button {
+  width: 160px;
+  height: 60px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+button.play {
+  background: #fff;
+}
+
+button.more-info {
+  background: #575757;
+  color: #fff;
+  width: 180px;
+}
+
+button.sound-control {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-right: 30px;
+}
+
+.muted {
+  display: none;
+}
+
+.left-btn-container {
+  display: flex;
+}
+
+.age-classification-container {
+  background: rgba(56, 56, 56, 0.7);
+  border-left: 3px solid #fff;
+  width: 150px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.age-classification {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #ff7d13;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/***************FILMS***************/
+
+.movies-container h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.movies {
+  display: flex;
+  overflow: auto;
+  margin-bottom: 50px;
+}
+
+.movies::-webkit-scrollbar {
+  display: none;
+}
+
+.movies figure {
+  margin-right: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.movies img {
+  border-radius: inherit;
+}
+
+/***************FILM TRAILER***************/
+
+.trailer {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+/***************FOOTER***************/
+
+footer {
+  color: grey;
+  text-align: center;
+  margin-top: 80px;
+  padding-bottom: 80px;
+}

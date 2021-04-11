@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e02b0205d6.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./resources/css/reset.css">  
+  <link rel="stylesheet" href="./resources/css/style.css">  
+  <title>Netflix Clone</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/"><img src="./resources/images/netflix-logo.png" alt="Logo" class="logo"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- <img src="./resources/images/spiderman-no-way-home.jpg" alt="" class="featured-film-bg"> -->
+
+    <video src="./resources/videos/spiderman-far-from-home-trailer.mp4" class="featured-film-trailer" id="featured-film-trailer" autoplay loop></video>
+
+    <header class="featured">
+        <h1><img src="./resources/images/spiderman-no-way-home-logo.png" alt="Spiderman No Way Home"></h1>
+
+        <div class="buttons-container">
+          <div>
+            <button class="play"><i class="fas fa-play"></i> Play</button>
+            <button class="more-info"><i class="fas fa-info-circle"></i> More Info</button>
+          </div>
+
+          <div class="left-btn-container">
+            <button class="sound-control" id="sound-control"><i class="fas fa-volume-up unmuted" id="unmuted"></i> <i class="fas fa-volume-mute muted" id="muted"></i></button>
+            
+            <div class="age-classification-container">
+              <div class="age-classification">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <section class="movies-container">
+      <section>
+        <h2>Marvel Cinematic Universe Phase One</h2>
+
+        <div class="movies">
+          <figure>
+            <img src="./resources/images/ironman-1.jpg" alt="Ironman 1">
+          </figure>
+          
+          <figure>
+            <img src="./resources/images/ironman-2.jpg" alt="Ironman 2">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/thor.jpg" alt="Thor">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/captain-america-the-first-avenger.jpg" alt="Captain America the First Avenger">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/avengers.jpg" alt="The Avengers">
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>Marvel Cinematic Universe Phase Two</h2>
+
+        <div class="movies">
+          <figure>
+            <img src="./resources/images/ironman-3.jpg" alt="Ironman 3">
+          </figure>
+          
+          <figure>
+            <img src="./resources/images/thor-the-dark-world.jpg" alt="Thor the Dark World">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/captain-america-the-winter-soldier.jpg" alt="Captain America the Winter Soldier">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/guardians-of-the-galaxy-vol1.jpg" alt="Guardians of the Galaxy">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/avengers-age-of-ultron.jpg" alt="Avengers Age of Ultron">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/antman.jpg" alt="Antman">
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>Marvel Cinematic Universe Phase Three and Four</h2>
+
+        <div class="movies">
+          <figure>
+            <img src="./resources/images/captain-america-civil-war.jpg" alt="Captain America Civil War">
+          </figure>
+          
+          <figure>
+            <img src="./resources/images/doctor-strange.jpg" alt="Doctor Strange">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/guardians-of-the-galaxy-vol2.jpg" alt="Guardians of the Galaxy Volume 2">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/thor-ragnarok.jpg" alt="Thor Ragnarok">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/black-panther.jpg" alt="Black Panther">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/avengers-infinity-war.jpg" alt="Avengers Infinity War">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/antman-and-the-wasp.jpg" alt="Antman and the Wasp">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/captain-marvel.jpg" alt="Captain Marvel">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/avengers-endgame.jpg" alt="Avengers Endgame">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/wanda-vision.jpg" alt="Wandavision">
+          </figure>
+
+          <figure>
+            <img src="./resources/images/the-falcon-and-the-winter-soldier.jpg" alt="The Falcon and the Winter Soldier">
+          </figure>
+        </div>
+      </section>
+    </section>
+
+    <div class="trailer" id="trailer">
+      <iframe width="1280" height="720" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+  </main>
+
+  <footer>
+    <small>This project has been developed by Samy Adel for study purposes only! The website layout has been inspired from Netflix, and the content and film thumbnails from Disney+</small>
+  </footer>
+  
+  <script src="./resources/scripts/script.js"></script>
+</body>
+</html>
